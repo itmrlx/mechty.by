@@ -1,0 +1,157 @@
+
+// sources
+@import 'src/_wordpress.scss'; // wp classes
+@import 'src/_bootstrap.scss'; // bootstrap
+@import 'src/_fonts.scss'; // fonts
+@import 'src/_jquery.fancybox.scss'; // fancybox
+@import 'src/_slick.scss'; // slick slider
+
+// utilites
+.wrapper{
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	min-width: 320px;
+}
+.container{
+	min-width: 320px;
+}
+.all-container{
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	margin: 45px auto;
+	padding: 30px;
+	@media screen and (max-width: 991px) {
+		margin: 0 auto 45px;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 10px;
+	}
+}
+.webber{
+	text-align: center;
+	margin-bottom: 45px;
+	a{
+		color: #333;
+	}
+	img{
+		height: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+// tabs
+.tabs-pane{
+	display: none;
+	&.active{
+		display: block;
+	}
+}
+// global
+*{outline: none !important;}
+body{
+	background: #F7F7F7;
+}
+.row{
+	@media screen and (max-width: 767px) {
+		margin: 0 -10px;
+	}
+}
+#vk_groups{
+	margin: 0 auto;
+}
+
+// buttons
+.btn{
+	transition: all .3s;
+}
+.btn-primary{
+	border: 3px solid $brand-primary;
+	border-radius: 0;
+	background: #fff;
+	color: $brand-primary;
+	font-size: 15px;
+	&.big{
+		font-size: 20px;
+		padding: 10px 30px;
+	}
+	&.bg{
+		border: 3px solid $brand-primary;
+		background: $brand-primary;
+		color: #fff;
+		&:hover,
+		&:focus,
+		&:active,
+		&:active:focus{
+			border: 3px solid $brand-primary;
+			color: $brand-primary;
+			background: #fff;
+		}
+	}
+	&:hover,
+	&:focus,
+	&:active,
+	&:active:focus{
+		border: 3px solid $brand-primary;
+		background: $brand-primary;
+		color: #fff;
+	}
+}
+
+// forms
+.form-control {
+	&:focus{
+		border-color: $brand-primary;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba($brand-primary,0.6);
+	}
+	&.name,
+	&.tel,
+	&.mail{
+		background-repeat: no-repeat;
+		background-position: 10px 50%;
+		background-size: 20px 20px;
+		padding-left: 35px;
+	}
+	&.name{
+		background-image: url(../img/avatar.svg);
+	}
+	&.tel{
+		background-image: url(../img/phone-call.svg);
+	}
+	&.mail{
+		background-image: url(../img/mail.svg);
+	}
+}
+
+// scroll to top
+.scroll-to-top{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	background: $brand-primary;
+	z-index: 999;
+	cursor: pointer;
+	&:hover{
+		background: darken($brand-primary,10%);
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		border-top: 2px solid #fff;
+		border-left: 2px solid #fff;
+		transform: rotate(45deg);
+		top: 50%;
+		left: 50%;
+		margin-top: -3px;
+		margin-left: -8px;
+	}
+}
