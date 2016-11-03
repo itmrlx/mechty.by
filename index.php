@@ -2,6 +2,7 @@
 
 			<!-- slider top -->
 			<div class="slider-top">
+				<?php $slidercnt = 1; ?>
 				<?php if( have_rows('m_slide','option') ): ?>
 					<?php while ( have_rows('m_slide','option') ) : the_row(); ?>
 						<?php $m_slide = get_sub_field('img'); ?>
@@ -10,8 +11,9 @@
 								<?php the_sub_field('text'); ?>
 								<?php if(get_sub_field('link')): ?>
 									<div class="centered">
-										<a href="#fform" class="btn btn-primary bg fancybox" onclick="fform('Узнать подробности', 'mail');">Узнать подробности</a>
+										<a href="<?php the_sub_field('link'); ?>" class="btn btn-primary bg"><?php the_sub_field('btn_text'); ?></a>
 									</div>
+									<?php $slidercnt++; ?>
 								<?php endif; ?>
 							</div>
 						</div>

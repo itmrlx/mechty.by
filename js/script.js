@@ -68,7 +68,7 @@ sendMyForm('saleform2', 'call', 'Спасибо, скоро мы с Вами с�
 sendMyForm('fformform', 'call', 'Спасибо, скоро мы с Вами свяжемся!');
 
 // form title
-function fform(title,mail,date) {
+function fform(title,mail,date,val) {
   $('.title-modal-form').html(title);
   if(mail){
     $('.mail-show').show();
@@ -80,6 +80,9 @@ function fform(title,mail,date) {
   }else{
     $('.date-show').hide();
   }
+}
+function fformVal(myval) {
+  $('#title-modal-val').val(myval);
 }
 
 // burger menu

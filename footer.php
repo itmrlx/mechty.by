@@ -66,10 +66,10 @@
 			<div class="form-group date-show" style="display: none;">
 				<input class="form-control date" name="date" type="date" placeholder="Дата:" />
 			</div>
-			<div class="form-group" style="display:none;">
+			<div class="form-group" style="display: none;">
 				<label>for robots:</label>
 				<input class="form-control" type="text" name="email" />
-				<input class="form-control title-modal-val" type="text" name="title" value="" />
+				<input class="form-control" id="title-modal-val" type="text" name="title" value="" />
 			</div>
 			<button type="submit" class="btn btn-primary">Отправить</button>
 		</form>
@@ -79,10 +79,10 @@
 	<div class="scroll-to-top"></div>
 
 	<!-- scripts -->
-	<script src="<?php bloginfo('template_url'); ?>/js/min/jquery-3.0.0-min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/js/min/jquery.fancybox-min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/js/min/slick-min.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/js/min/script-min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/dist/jquery-3.0.0-dist.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/dist/jquery.fancybox-dist.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/dist/slick-dist.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/dist/script-dist.js"></script>
 	<?php wp_footer(); ?>
 </body>
 </html>
