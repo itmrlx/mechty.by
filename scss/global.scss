@@ -138,6 +138,7 @@ body{
 	background: $brand-primary;
 	z-index: 999;
 	cursor: pointer;
+	display: none;
 	&:hover{
 		background: darken($brand-primary,10%);
 	}

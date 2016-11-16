@@ -104,7 +104,7 @@ $('.burger-menu').click(function () {
 })(jQuery);
 
 //scroll to top
-// $(document).ready(function(){
-//   $(window).scroll(function(){if ($(this).scrollTop() > 300){$('.scroll-to-top').fadeIn();}else{$('.scroll-to-top').fadeOut();}});
-//   $('.scroll-to-top').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
-// });
+$(document).ready(function(){
+  $(window).scroll(function(){if ($(this).scrollTop() > 300){$('.scroll-to-top').fadeIn();}else{$('.scroll-to-top').fadeOut();}});
+  $('.scroll-to-top').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
+});
